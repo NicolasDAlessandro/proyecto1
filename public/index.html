@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Enter a new product:</h1>
+    <form action="/api/products" method="post" class="formLayout">
+        <div class="inputs">
+            <label for="name">Name</label>
+            <input type="text" name="name" >
+        </div>
+        <div class="inputs">
+            <label for="price">Price</label>
+            <input type="number" name="price">
+        </div>
+        <div class="inputs">
+            <label for="url">Url (image)</label>
+            <input type="text" name="url">
+        </div>
+        <div class="inputs">
+            <label for="stock">Stock</label>
+            <input type="number" name="stock">
+        </div>
+        <div class="inputs">
+            <label for="descrip">Descripcion</label>
+            <input type="text" name="descrip">
+        </div>
+        <div class="inputs">
+            <label for="codigo">Codigo</label>
+            <input type="text" name="codigo">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
